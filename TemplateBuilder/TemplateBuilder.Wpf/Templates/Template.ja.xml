@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CommandDefinitions xmlns="https://github.com/kurema/BlueStacksScriptGeneratorFGO/CommandDefinitions.xsd">
+	<Commands>
+		<CommandGroup title="夏目漱石">
+			<Command title="吾輩" command="me">
+				<Content>吾輩は{animals}である。</Content>
+				<Modifiers>
+					<Modifier group="Animals" />
+				</Modifiers>
+			</Command>
+			<Command title="まだない" command="state">
+				<Content>{what}は{state}。</Content>
+				<Modifiers>
+					<Modifier group="Target" replaceWithOverride="what"  />
+					<Modifier group="State" replaceWithOverride="state"  />
+				</Modifiers>
+			</Command>
+
+		</CommandGroup>
+	</Commands>
+	<ModifierDefinitions>
+		<ModifierGroup key="Animals" repleceWith="animals"  title="動物">
+			<ModifierDefinition arg="cat" title="猫">猫</ModifierDefinition>
+			<ModifierDefinition arg="monkey" title="猿">猿</ModifierDefinition>
+			<ModifierDefinition arg="bird" title="鳥">鳥</ModifierDefinition>
+		</ModifierGroup>
+		<ModifierGroup key="Target" repleceWith="target"  title="対象">
+			<ModifierDefinition arg="name" title="猫">名前</ModifierDefinition>
+			<ModifierDefinition arg="title" title="肩書">肩書</ModifierDefinition>
+			<ModifierDefinition arg="role" title="役割">この物語に於ける役割</ModifierDefinition>
+		</ModifierGroup>
+		<ModifierGroup key="State" repleceWith="state"  title="状態">
+			<ModifierDefinition arg="none" title="無">まだない</ModifierDefinition>
+			<ModifierDefinition arg="one" title="一">一つだけある</ModifierDefinition>
+			<ModifierDefinition arg="many" title="多">結構たくさんある</ModifierDefinition>
+		</ModifierGroup>
+	</ModifierDefinitions>
+</CommandDefinitions>

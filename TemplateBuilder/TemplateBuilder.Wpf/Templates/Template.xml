@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CommandDefinitions xmlns="https://github.com/kurema/BlueStacksScriptGeneratorFGO/CommandDefinitions.xsd">
+	<Commands>
+		<CommandGroup title="Sentence">
+			<Command title="I am" command="me">
+				<Content>I am a {animals}.</Content>
+				<Modifiers>
+					<Modifier group="Animals" />
+				</Modifiers>
+			</Command>
+			<Command title="Posetion" command="state">
+				<Content>I have {state} {what}.</Content>
+				<Modifiers>
+					<Modifier group="Target" replaceWithOverride="what"  />
+					<Modifier group="State" replaceWithOverride="state"  />
+				</Modifiers>
+			</Command>
+
+		</CommandGroup>
+	</Commands>
+	<ModifierDefinitions>
+		<ModifierGroup key="Animals" repleceWith="animals"  title="Animals">
+			<ModifierDefinition arg="cat" title="cat">cat</ModifierDefinition>
+			<ModifierDefinition arg="monkey" title="monkey">monkey</ModifierDefinition>
+			<ModifierDefinition arg="bird" title="bird">bird</ModifierDefinition>
+		</ModifierGroup>
+		<ModifierGroup key="Target" repleceWith="target"  title="target">
+			<ModifierDefinition arg="name" title="name">name</ModifierDefinition>
+			<ModifierDefinition arg="car" title="car">car</ModifierDefinition>
+			<ModifierDefinition arg="role" title="role">role in this story</ModifierDefinition>
+		</ModifierGroup>
+		<ModifierGroup key="State" repleceWith="state"  title="state">
+			<ModifierDefinition arg="none" title="no">no</ModifierDefinition>
+			<ModifierDefinition arg="one" title="one">a</ModifierDefinition>
+			<ModifierDefinition arg="lots" title="lots of">lots of</ModifierDefinition>
+		</ModifierGroup>
+	</ModifierDefinitions>
+</CommandDefinitions>
