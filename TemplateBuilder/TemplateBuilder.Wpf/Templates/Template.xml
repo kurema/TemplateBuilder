@@ -31,7 +31,7 @@
 		</ModifierGroup>
 		<ModifierGroup key="State" repleceWith="state"  title="state">
 			<ModifierDefinition arg="none" title="no">no</ModifierDefinition>
-			<ModifierDefinition arg="one" title="one">a</ModifierDefinition>
+			<ModifierDefinition arg="one" title="one">one</ModifierDefinition>
 			<ModifierDefinition arg="lots" title="lots of">lots of</ModifierDefinition>
 		</ModifierGroup>
 	</ModifierDefinitions>
