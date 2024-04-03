@@ -1,5 +1,5 @@
 <xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>
-  <generateClasses language='CS' namespace='BlueStacksScriptGeneratorFGO.CommandDefinitions' options="properties">
+  <generateClasses language='CS' namespace='TemplateBuilder.Wpf.CommandDefinitions' options="properties">
     <schema>CommandDefinitions.xsd</schema>
   </generateClasses>
 </xsd>
